@@ -17,3 +17,8 @@ highlighted_poems_details = []
 # Split each poem detail into title, author, and date, and add to the list
 for poem in highlighted_poems_stripped:
     highlighted_poems_details.append(poem.split(':'))
+
+# Initialize lists to store titles, poets, and dates separately
+titles = []
+poets = []
+dates = []
