@@ -22,3 +22,9 @@ for poem in highlighted_poems_stripped:
 titles = []
 poets = []
 dates = []
+
+# Extract titles, poets, and dates from the details and add to respective lists
+for poem in highlighted_poems_details:
+    titles.append(poem[0])
+    poets.append(poem[1])
+    dates.append(poem[2])
