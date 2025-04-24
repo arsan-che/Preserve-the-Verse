@@ -11,3 +11,9 @@ highlighted_poems_stripped = []
 # Strip whitespace from each poem detail and add to the new list
 for poem in highlighted_poems_list:
     highlighted_poems_stripped.append(poem.strip())
+# Initialize an empty list to store lists of poem details
+highlighted_poems_details = []
+
+# Split each poem detail into title, author, and date, and add to the list
+for poem in highlighted_poems_stripped:
+    highlighted_poems_details.append(poem.split(':'))
