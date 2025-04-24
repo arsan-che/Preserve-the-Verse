@@ -28,3 +28,7 @@ for poem in highlighted_poems_details:
     titles.append(poem[0])
     poets.append(poem[1])
     dates.append(poem[2])
+    
+# Print each poem's details in a formatted string
+for i in range(len(highlighted_poems_details)):
+    print('The poem {} was published by {} in {}'.format(titles[i], poets[i], dates[i]))
