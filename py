@@ -2,3 +2,12 @@
 highlighted_poems = "Afterimages:Audre Lorde:1997,  The Shadow:William Carlos Williams:1915, Ecstasy:Gabriela Mistral:1925,   Georgia Dusk:Jean Toomer:1923,   Parting Before Daybreak:An Qi:2014, The Untold Want:Walt Whitman:1871, Mr. Grumpledump's Song:Shel Silverstein:2004, Angel Sound Mexico City:Carmen Boullosa:2013, In Love:Kamala Suraiyya:1965, Dream Variations:Langston Hughes:1994, Dreamwood:Adrienne Rich:1987"
 
 print(highlighted_poems)
+# Split the string into a list of poem details
+highlighted_poems_list = highlighted_poems.split(',')
+
+# Initialize an empty list to store cleaned-up poem details
+highlighted_poems_stripped = []
+
+# Strip whitespace from each poem detail and add to the new list
+for poem in highlighted_poems_list:
+    highlighted_poems_stripped.append(poem.strip())
